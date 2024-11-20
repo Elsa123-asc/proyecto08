@@ -1,10 +1,16 @@
-package es.santander.ascender;
+package es.santander.ascender.proyecto08;
+
+import java.util.Date;
 
 /**
  * Hello world!
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        String timezone = "Europe/Kiev";
+        Date date = new Date();
+        String formattedDate = new OldApiDate().formatDate(date, timezone);
+        System.out.println(date);
+        System.out.println(formattedDate);
     }
 }
